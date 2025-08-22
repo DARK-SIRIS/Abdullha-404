@@ -1520,45 +1520,6 @@ body {
     color: var(--text-fade);
 }
 
-/* Performance Panel */
-
-.perf-panel {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    min-width: 220px;
-    max-width: 300px;
-    background: #101c22;
-    border: 1px solid #1d3037;
-    border-radius: 12px;
-    padding: .8rem .9rem .9rem;
-    font-family: var(--font-mono);
-    font-size: .55rem;
-    color: var(--text-dim);
-    letter-spacing: .5px;
-    line-height: 1.5;
-    box-shadow: 0 8px 30px -12px rgba(0, 0, 0, .6);
-    display: grid;
-    gap: .35rem;
-    z-index: 150;
-    animation: fadeIn .25s ease;
-}
-
-.perf-panel strong {
-    color: var(--accent-alt);
-    font-weight: 500;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(6px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* Reveal */
 
