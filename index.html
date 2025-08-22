@@ -355,64 +355,6 @@
     </div>
   </footer>
 
-<script>
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault(); // prevent default form submission
-
-    // Get form values
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const subject = document.getElementById("subject").value.trim();
-    const message = document.getElementById("message").value.trim();
-    
-    // Honeypot field to prevent bots
-    const hp = document.getElementById("hp").value;
-    if (hp) return; // do nothing if honeypot is filled
-
-    // Engagement type checkboxes
-    const engages = Array.from(document.querySelectorAll("input[name='engage']:checked")).map(el => el.value).join(", ") || "None";
-
-    // Construct Telegram message
-    const telegramMessage = `
-New Contact Form Submission:
-Name: ${name}
-Email: ${email}
-Subject: ${subject}
-Message: ${message}
-Engagement: ${engages}
-    `;
-
-    // Telegram Bot info
-    const botToken = "7409308653:AAHYxmwLpp7PRK80jmqa0o5HtvYWDs3BG24";
-    const chatId = "7916265319";
-    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-
-    // Send message via Telegram
-    fetch(url, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            chat_id: chatId,
-            text: telegramMessage
-        })
-    })
-    .then(res => res.json())
-    .then(data => {
-        if(data.ok){
-            alert("Message sent successfully!");
-            document.getElementById("contact-form").reset();
-        } else {
-            alert("Failed to send message. Try again later.");
-            console.error(data);
-        }
-    })
-    .catch(err => {
-        alert("Error sending message.");
-        console.error(err);
-    });
-});
-</script>
-
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -754,13 +696,20 @@ function copyCode(el) {
 function initForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
-  const status = document.getElementById('form-status');
+  const status = document.getElementById('form-status'); // Make sure you have an element with id="form-status"
 
   form.addEventListener('submit', e => {
     e.preventDefault();
     status.textContent = '';
+    
+    // Honeypot check
     const hp = form.querySelector('#hp');
-    if (hp && hp.value) { status.textContent = 'Spam detected.'; return; }
+    if (hp && hp.value) { 
+      status.textContent = 'Spam detected.'; 
+      return; 
+    }
+
+    // Validate required fields
     const required = ['name','email','subject','message'];
     let valid = true;
     required.forEach(name => {
@@ -768,17 +717,72 @@ function initForm() {
       const err = field?.closest('.form-field')?.querySelector('.err');
       if (!field || !err) return;
       err.textContent = '';
-      if (!field.value.trim()) { err.textContent = 'Required.'; valid = false; }
-      else if (name === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) { err.textContent = 'Invalid email.'; valid = false; }
+      if (!field.value.trim()) { 
+        err.textContent = 'Required.'; 
+        valid = false; 
+      }
+      else if (name === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) { 
+        err.textContent = 'Invalid email.'; 
+        valid = false; 
+      }
     });
     if (!valid) return;
+
+    // Sending status
     status.textContent = 'Sending...';
-    setTimeout(() => {
-      status.textContent = 'Message sent successfully!';
-      form.reset();
-    }, 1100);
+
+    // Collect form data
+    const name = form.querySelector('#name').value.trim();
+    const email = form.querySelector('#email').value.trim();
+    const subject = form.querySelector('#subject').value.trim();
+    const messageText = form.querySelector('#message').value.trim();
+    const engages = Array.from(form.querySelectorAll("input[name='engage']:checked")).map(el => el.value).join(", ") || "None";
+
+    // Stylish Telegram message
+    const telegramMessage = `
+*📨 New Contact Form Submission*
+
+*👤 Name:* \`${name}\`
+*✉️ Email:* \`${email}\`
+*📝 Subject:* \`${subject}\`
+*💬 Message:*\n${messageText.replace(/\n/g, '\n')}
+*📌 Engagement:* \`${engages}\`
+    `;
+
+    // Telegram Bot info
+    const botToken = "7409308653:AAHYxmwLpp7PRK80jmqa0o5HtvYWDs3BG24";
+    const chatId = "7916265319";
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+    // Send message via Telegram
+    fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: telegramMessage,
+        parse_mode: "MarkdownV2"
+      })
+    })
+    .then(res => res.json())
+    .then(data => {
+      if(data.ok){
+        status.textContent = 'Message sent successfully!'; // updated status
+        form.reset();
+      } else {
+        status.textContent = 'Failed to send message. Try again later.';
+        console.error(data);
+      }
+    })
+    .catch(err => {
+      status.textContent = 'Error sending message.';
+      console.error(err);
+    });
   });
 }
+
+// Initialize form
+document.addEventListener('DOMContentLoaded', initForm);
 
 /* Performance Panel */
 let perfVisible = false;
