@@ -355,6 +355,65 @@
     </div>
   </footer>
 
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent default form submission
+
+    // Get form values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+    
+    // Honeypot field to prevent bots
+    const hp = document.getElementById("hp").value;
+    if (hp) return; // do nothing if honeypot is filled
+
+    // Engagement type checkboxes
+    const engages = Array.from(document.querySelectorAll("input[name='engage']:checked")).map(el => el.value).join(", ") || "None";
+
+    // Construct Telegram message
+    const telegramMessage = `
+New Contact Form Submission:
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+Message: ${message}
+Engagement: ${engages}
+    `;
+
+    // Telegram Bot info
+    const botToken = "7409308653:AAHYxmwLpp7PRK80jmqa0o5HtvYWDs3BG24";
+    const chatId = "7916265319";
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+    // Send message via Telegram
+    fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            chat_id: chatId,
+            text: telegramMessage
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if(data.ok){
+            alert("Message sent successfully!");
+            document.getElementById("contact-form").reset();
+        } else {
+            alert("Failed to send message. Try again later.");
+            console.error(data);
+        }
+    })
+    .catch(err => {
+        alert("Error sending message.");
+        console.error(err);
+    });
+});
+</script>
+
+
   <script>
     document.addEventListener('DOMContentLoaded', () => {
   initYear();
