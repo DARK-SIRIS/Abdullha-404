@@ -5,11 +5,22 @@
     <meta charset="UTF-8">
     <title>ABDULLHA</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description"
-        content="Portfolio of Abdullha – web engineer building high‑performance, accessible, scalable web platforms with modern JavaScript, TypeScript, and cloud-native architectures.">
+    <link rel="icon" href="https://img.icons8.com/color/48/jerry.png" type="image/x-icon">
     <meta name="theme-color" content="#05080b" id="theme-color">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preload" href="fonts/jetbrains-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content=" ABDULLHA PROTIFLIO WEBSITE ">
+    <meta property="og:description"
+        content="I'am Abdullha, I'am Python Developer.">
+    <meta property="og:url" content="https://abdullha.netlify.app/">
+    <meta property="og:image" content="https://abdullah.battlecore.xyz/xylon.png">
+    <!-- Change this if your logo is different -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ABDULLHA PROTIFLIO WEBSITE">
+    <meta property="og:locale" content="en_US">
+
+
     <link rel="stylesheet" href="style.css?v=2">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <script>document.documentElement.classList.remove('no-js');</script>
@@ -243,7 +254,8 @@ config = {
                             alt="API gateway architecture" loading="lazy">
                     </div>
                     <div class="project-links">
-                        <a href="http://abdullah.battlecore.xyz/" class="plink" aria-disabled="true"><i class="bi bi-globe-americas"></i> Preview</a>
+                        <a href="http://abdullah.battlecore.xyz/" class="plink" aria-disabled="true"><i
+                                class="bi bi-globe-americas"></i> Preview</a>
                     </div>
                 </article>
                 <article class="project-card reveal" data-tags="frontend performance">
@@ -261,10 +273,12 @@ config = {
                         <li>React</li>
                     </ul>
                     <div class="project-img lazy">
-                        <img data-src="https://i.ibb.co/84fSPbSz/Screenshot-2025-08-22-171551.png" alt="WeHostBD" loading="lazy">
+                        <img data-src="https://i.ibb.co/84fSPbSz/Screenshot-2025-08-22-171551.png" alt="WeHostBD"
+                            loading="lazy">
                     </div>
                     <div class="project-links">
-                        <a href="https://xylon.netlify.app/" class="plink" aria-disabled="true"><i class="bi bi-globe-americas"></i> Preview</a>
+                        <a href="https://xylon.netlify.app/" class="plink" aria-disabled="true"><i
+                                class="bi bi-globe-americas"></i> Preview</a>
                     </div>
                 </article>
 
@@ -857,59 +871,82 @@ function report(name,value){
    Author: Abdullha
    ================================ */
 
-/* ================= Right Click Disable ================= */
-document.addEventListener("contextmenu", e => e.preventDefault());
+        /* ================= Right Click Disable ================= */
+        document.addEventListener("contextmenu", e => e.preventDefault());
 
-/* ================= Copy, Cut, Paste Disable ================= */
-document.addEventListener("copy", e => e.preventDefault());
-document.addEventListener("cut", e => e.preventDefault());
-document.addEventListener("paste", e => e.preventDefault());
+        /* ================= Copy, Cut, Paste Disable ================= */
+        document.addEventListener("copy", e => e.preventDefault());
+        document.addEventListener("cut", e => e.preventDefault());
+        document.addEventListener("paste", e => e.preventDefault());
 
-/* ================= Drag Image Disable ================= */
-document.addEventListener("dragstart", e => e.preventDefault());
+        /* ================= Drag Image Disable ================= */
+        document.addEventListener("dragstart", e => e.preventDefault());
 
-/* ================= Text Selection Disable ================= */
-document.addEventListener("DOMContentLoaded", function() {
-  document.body.style.userSelect = "none";
-  document.body.style.webkitUserSelect = "none";
-  document.body.style.msUserSelect = "none";
-  document.body.style.MozUserSelect = "none";
-});
-document.addEventListener("selectstart", e => e.preventDefault());
+        /* ================= Text Selection Disable ================= */
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.style.userSelect = "none";
+            document.body.style.webkitUserSelect = "none";
+            document.body.style.msUserSelect = "none";
+            document.body.style.MozUserSelect = "none";
+        });
+        document.addEventListener("selectstart", e => e.preventDefault());
 
-/* ================= DevTools Detect ================= */
-let devtools = /./;
-devtools.toString = function() {
-  return false; // alert off
-};
-console.log('%c', devtools);
+        /* ================= DevTools Detect ================= */
+        let devtools = /./;
+        devtools.toString = function () {
+            return false; // alert off
+        };
+        console.log('%c', devtools);
 
-/* ================= Input Sanitizer ================= */
-function sanitizeInput(str) {
-  return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
+        /* ================= Input Sanitizer ================= */
+        function sanitizeInput(str) {
+            return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        }
 
-/* ================= Smart Keyboard Protection ================= */
-document.addEventListener("keydown", function(e){
-  if (e.target.tagName.toLowerCase() === "input" || e.target.tagName.toLowerCase() === "textarea") {
-    return true; // allow typing in inputs
-  }
-  e.preventDefault(); // block all other key presses
-});
-document.addEventListener("keypress", function(e){
-  if (e.target.tagName.toLowerCase() === "input" || e.target.tagName.toLowerCase() === "textarea") return true;
-  e.preventDefault();
-});
-document.addEventListener("keyup", function(e){
-  if (e.target.tagName.toLowerCase() === "input" || e.target.tagName.toLowerCase() === "textarea") return true;
-  e.preventDefault();
-});
+        /* ================= Smart Keyboard Protection ================= */
+        document.addEventListener("keydown", function (e) {
+            if (e.target.tagName.toLowerCase() === "input" || e.target.tagName.toLowerCase() === "textarea") {
+                return true; // allow typing in inputs
+            }
+            e.preventDefault(); // block all other key presses
+        });
+        document.addEventListener("keypress", function (e) {
+            if (e.target.tagName.toLowerCase() === "input" || e.target.tagName.toLowerCase() === "textarea") return true;
+            e.preventDefault();
+        });
+        document.addEventListener("keyup", function (e) {
+            if (e.target.tagName.toLowerCase() === "input" || e.target.tagName.toLowerCase() === "textarea") return true;
+            e.preventDefault();
+        });
 
-/* ================= Disable Alert, Confirm, Prompt ================= */
-window.alert = function() { return false; };
-window.confirm = function() { return false; };
-window.prompt = function() { return false; };
+        /* ================= Disable Alert, Confirm, Prompt ================= */
+        window.alert = function () { return false; };
+        window.confirm = function () { return false; };
+        window.prompt = function () { return false; };
 
+
+        document.addEventListener("visibilitychange", function () {
+            if (document.visibilityState === "visible") {
+                document.title = "ABDULLHA";
+                document.querySelector("#favicon").setAttribute("href", "src/png/main-favicon.png");
+            } else {
+                document.title = "Come Back To Web";
+                // CDN থেকে folded hands icon
+                document.querySelector("#favicon").setAttribute("href", "https://img.icons8.com/emoji/48/000000/folded-hands-light-skin-tone.png");
+            }
+        });
+
+
+    </script>
+
+    <script>
+        const validPaths = ["/", "/index.html"]; // এখানে তোমার আসল পেজগুলোর লিস্ট দাও
+        const currentPath = window.location.pathname;
+
+        if (!validPaths.includes(currentPath)) {
+            window.location.href = "/404.html"; // custom error page
+        }
+    </script>
     </script>
 </body>
 
