@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js" data-theme="dark">
+
 <head>
-  <meta charset="UTF-8">
-  <title>ABDULLHA</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="description" content="Portfolio of Abdullha – web engineer building high‑performance, accessible, scalable web platforms with modern JavaScript, TypeScript, and cloud-native architectures.">
-  <meta name="theme-color" content="#05080b" id="theme-color">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="preload" href="fonts/jetbrains-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="style.css?v=2">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <script>document.documentElement.classList.remove('no-js');</script>
+    <meta charset="UTF-8">
+    <title>ABDULLHA</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description"
+        content="Portfolio of Abdullha – web engineer building high‑performance, accessible, scalable web platforms with modern JavaScript, TypeScript, and cloud-native architectures.">
+    <meta name="theme-color" content="#05080b" id="theme-color">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preload" href="fonts/jetbrains-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <script>document.documentElement.classList.remove('no-js');</script>
 </head>
+
 <body>
-  <!-- Animated Background -->
-  <canvas id="bg-flow" aria-hidden="true"></canvas>
-  <div class="bg-grid" aria-hidden="true"></div>
-  <div class="bg-aurora" aria-hidden="true"></div>
-  <div id="live-region" class="sr-only" aria-live="polite"></div>
+    <!-- Animated Background -->
+    <canvas id="bg-flow" aria-hidden="true"></canvas>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-aurora" aria-hidden="true"></div>
+    <div id="live-region" class="sr-only" aria-live="polite"></div>
 
-  <a class="skip-link" href="#main">Skip to main content</a>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header" id="top">
-    <div class="header-inner">
-      <div class="brand">
-        <span class="brand-icon"><i class="bi bi-braces" aria-hidden="true"></i></span>
-        <span class="brand-name">ᏗᏰᎴᏬᏝᏝᏂᏗ<span class="accent-dot">乂ＡＸ</span></span>
-      </div>
-      <nav class="nav" aria-label="Primary">
-        <ul class="nav__list">
-          <li><a href="#about" data-nav>About</a></li>
-          <li><a href="#stack" data-nav>Stack</a></li>
-          <li><a href="#projects" data-nav>Projects</a></li>
-          <li><a href="#contact" data-nav>Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-actions">
-        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
-          <i class="bi bi-sun-fill theme-icon" aria-hidden="true"></i>
-        </button>
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
-          <span class="nav-toggle__line"></span>
-          <span class="nav-toggle__line"></span>
-          <span class="nav-toggle__line"></span>
-        </button>
-      </div>
-    </div>
-    <div id="mobileNav" class="mobile-nav" hidden>
-      <ul class="mobile-nav__list">
-        <li><a href="#about" data-nav>About</a></li>
-        <li><a href="#stack" data-nav>Stack</a></li>
-        <li><a href="#projects" data-nav>Projects</a></li>
-        <li><a href="#contact" data-nav>Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main id="main">
-    <!-- HERO -->
-    <section class="section hero" aria-labelledby="hero-title">
-      <div class="hero__layout">
-        <div class="hero__content">
-          <h1 id="hero-title" class="hero__title">
-            Hey there: 🥰 I'am Abdullha, I'am Python Developer.
-          </h1>
-          <p class="hero__roles">
-            <span class="role-prefix"><i class="bi bi-cpu" aria-hidden="true"></i></span>
-            <span class="role-rotator" data-roles='["Junior Web Developer","Full‑Stack Python Developer","Web Design Practitioner","Performance & Accessibility Skillful","API & Platform Architect"]'>Web Engineer</span>
-            <span class="caret" aria-hidden="true"></span>
-          </p>
-          <p class="hero__tagline">
-            I architect and deliver scalable Python / Nobe.js frontends & robust Html / PHP / Java integrating performance budgets, observability, accessibility, and secure CI/CD from the outset.
-          </p>
-          <div class="hero__actions">
-            <a href="#projects" class="btn btn--primary"><i class="bi bi-kanban" aria-hidden="true"></i> Featured Work</a>
-            <a href="#contact" class="btn btn--outline"><i class="bi bi-send" aria-hidden="true"></i> Collaborate</a>
-            <button id="copySnippet" class="btn btn--ghost" data-copy-target="#heroSnippet"><i class="bi bi-clipboard" aria-hidden="true"></i> Copy Snippet</button>
-          </div>
-          <ul class="hero__meta">
-            <li><i class="bi bi-lightning-charge"></i> PYTHON DEVELOPER</li>
-            <li><i class="bi bi-universal-access-circle"></i> WEB DEVELOPER</li>
-            <li><i class="bi bi-cloud-check"></i> API DEVELOPER</li>
-          </ul>
+    <header class="site-header" id="top">
+        <div class="header-inner">
+            <div class="brand">
+                <span class="brand-icon"><i class="bi bi-braces" aria-hidden="true"></i></span>
+                <span class="brand-name">ᏗᏰᎴᏬᏝᏝᏂᏗ<span class="accent-dot">乂ＡＸ</span></span>
+            </div>
+            <nav class="nav" aria-label="Primary">
+                <ul class="nav__list">
+                    <li><a href="#about" data-nav>About</a></li>
+                    <li><a href="#stack" data-nav>Stack</a></li>
+                    <li><a href="#projects" data-nav>Projects</a></li>
+                    <li><a href="#contact" data-nav>Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+                    <i class="bi bi-sun-fill theme-icon" aria-hidden="true"></i>
+                </button>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
+                    aria-controls="mobileNav">
+                    <span class="nav-toggle__line"></span>
+                    <span class="nav-toggle__line"></span>
+                    <span class="nav-toggle__line"></span>
+                </button>
+            </div>
         </div>
-        <div class="hero__code-block" aria-label="Architecture snippet">
-<pre id="heroSnippet"><code><span class="c">
-# Bot development and web application configuration (Python dict)
+        <div id="mobileNav" class="mobile-nav" hidden>
+            <ul class="mobile-nav__list">
+                <li><a href="#about" data-nav>About</a></li>
+                <li><a href="#stack" data-nav>Stack</a></li>
+                <li><a href="#projects" data-nav>Projects</a></li>
+                <li><a href="#contact" data-nav>Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section class="section hero" aria-labelledby="hero-title">
+            <div class="hero__layout">
+                <div class="hero__content">
+                    <h1 id="hero-title" class="hero__title">
+                        Hey there: 🥰 I'am Abdullha, I'am Python Developer.
+                    </h1>
+                    <p class="hero__roles">
+                        <span class="role-prefix"><i class="bi bi-cpu" aria-hidden="true"></i></span>
+                        <span class="role-rotator"
+                            data-roles='["Junior Web Developer","Full‑Stack Python Developer","Web Design Practitioner","Performance & Accessibility Skillful","API & Platform Architect"]'>Web
+                            Engineer</span>
+                        <span class="caret" aria-hidden="true"></span>
+                    </p>
+                    <p class="hero__tagline">
+                        I architect and deliver scalable Python / Nobe.js frontends & robust Html / PHP / Java
+                        integrating performance budgets, observability, accessibility, and secure CI/CD from the outset.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn btn--primary"><i class="bi bi-kanban" aria-hidden="true"></i>
+                            Featured Work</a>
+                        <a href="#contact" class="btn btn--outline"><i class="bi bi-send" aria-hidden="true"></i>
+                            Collaborate</a>
+                        <button id="copySnippet" class="btn btn--ghost" data-copy-target="#heroSnippet"><i
+                                class="bi bi-clipboard" aria-hidden="true"></i> Copy Snippet</button>
+                    </div>
+                    <ul class="hero__meta">
+                        <li><i class="bi bi-lightning-charge"></i> PYTHON DEVELOPER</li>
+                        <li><i class="bi bi-universal-access-circle"></i> WEB DEVELOPER</li>
+                        <li><i class="bi bi-cloud-check"></i> API DEVELOPER</li>
+                    </ul>
+                </div>
+                <div class="hero__code-block" aria-label="Architecture snippet">
+                    <pre id="heroSnippet"><code><span class="c">
+# Python development and web application configuration
 
 config = {
     "developerProfile": {
@@ -110,497 +120,495 @@ config = {
     "clientSatisfaction": "55% positive feedback"
 
 }</code></pre>
-          <div class="code-bar">
-            <span class="dot green"></span><span class="dot yellow"></span><span class="dot red"></span>
-            <span class="fname">AX-PROFILE.JSON</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section" aria-labelledby="about-title">
-      <div class="section__header">
-        <h2 id="about-title" class="section__title">About</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="about__grid">
-        <div class="about__text reveal">
-          <p>
-            I’m Abdullha, a senior web engineer focused on robust architectures, maintainable code, and measurable user value. I blend system design, API composition, and interface performance into cohesive delivery pipelines.
-          </p>
-          <p>
-            My process includes progressive enhancement, typed contracts (TypeScript + schema validation), CI quality gates (lint / type / test / accessibility / bundle budgets), and observability-first instrumentation (OpenTelemetry, structured logs, real-user metrics).
-          </p>
-          <p>
-            I advocate for engineering discipline: small PRs, explicit boundaries, dependency health audits, and steady refactoring to reduce long-term entropy and cognitive load.
-          </p>
-          <ul class="stats" aria-label="Key metrics">
-            <li><span class="num">3+</span><span class="label">Years</span></li>
-            <li><span class="num">180+</span><span class="label">Features Shipped</span></li>
-            <li><span class="num">95%</span><span class="label">Lighthouse Avg</span></li>
-            <li><span class="num">0</span><span class="label">P1 Rollbacks</span></li>
-          </ul>
-        </div>
-        <div class="about__panel reveal">
-          <figure class="profile-card">
-            <img src="https://rafi-not-found.my.id/profile.png" alt="Portrait of Abdullha" loading="lazy">
-            <figcaption>
-              <span class="title">RAFI NOT FOUND</span>
-              <span class="sub">Developer</span>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- STACK -->
-    <section id="stack" class="section" aria-labelledby="stack-title">
-      <div class="section__header">
-        <h2 id="stack-title" class="section__title">Tech Stack & Principles</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="stack__groups">
-        <div class="stack-group reveal">
-          <h3>Programming Languages</h3>
-          <ul class="tag-list">
-            <li class="tag">PHP</li><li class="tag">JavaScript (ESNext)</li><li class="tag">Html</li><li class="tag">Python (Scripting)</li>
-          </ul>
-          <ul class="bars">
-            <li><span>PHP</span><div class="bar"><b style="--w:90%"></b></div></li>
-            <li><span>JavaScript</span><div class="bar"><b style="--w:85%"></b></div></li>
-            <li><span>Python</span><div class="bar"><b style="--w:70%"></b></div></li>
-          </ul>
-        </div>
-        <div class="stack-group reveal">
-          <h3>Bot Development & APIs</h3>
-          <ul class="tag-list">
-            <li class="tag">Telegram Bot</li><li class="tag">API Capture</li><li class="tag">Webhooks</li>
-            <li class="tag">Telethon</li>
-          </ul>
-          <ul class="bars">
-            <li><span>Telegram Bot</span><div class="bar"><b style="--w:89%"></b></div></li>
-            <li><span>API Capture</span><div class="bar"><b style="--w:82%"></b></div></li>
-            <li><span>Telethon</span><div class="bar"><b style="--w:85%"></b></div></li>
-          </ul>
-        </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section" aria-labelledby="projects-title">
-      <div class="section__header">
-        <h2 id="projects-title" class="section__title">Projects</h2>
-        <div class="divider"></div>
-      </div>
-
-      <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="frontend">Security</button>
-        <button class="filter-btn" data-filter="backend">Backend</button>
-        <button class="filter-btn" data-filter="tooling">Tool's</button>
-        <button class="filter-btn" data-filter="performance">Hosting</button>
-      </div>
-
-      <div class="projects__grid" id="projectGrid">
-        <article class="project-card reveal" data-tags="backend performance">
-          <div class="project-card__head">
-            <span class="project-icon"><i class="bi bi-telegram" aria-hidden="true"></i></span>
-            <h3 class="project-title">Telegram Bot Manager</h3>
-          </div>
-          <p class="project-desc">
-            Advanced Telegram bot management system with multi-bot support, analytics dashboard, and automated user engagement features.
-          </p>
-          <ul class="mini-tags">
-            <li>JavaScript</li><li>Python</li><li>PHP</li>
-          </ul>
-          <div class="project-img lazy">
-            <img data-src="https://placehold.co/800x400/111c23/9db4c2?text=Telegram+Bot+Manager" alt="API gateway architecture" loading="lazy">
-          </div>
-          <div class="project-links">
-            <a href="#" class="plink disabled" aria-disabled="true"><i class="bi bi-github"></i> private</a>
-            <button class="plink details-btn" data-project="gateway"><i class="bi bi-eye"></i> Details</button>
-          </div>
-        </article>
-        <article class="project-card reveal" data-tags="frontend performance">
-          <div class="project-card__head">
-            <span class="project-icon"><i class="bi bi-lightning" aria-hidden="true"></i></span>
-            <h3 class="project-title">Hosting</h3>
-          </div>
-          <p class="project-desc">
-            Superfast & secure web hosting with affordable pricing. Get started today with shared & premium hosting plans. 
-          </p>
-          <ul class="mini-tags">
-            <li>Domain</li><li>SSL CERTIFICATE</li><li>Shared Hosting</li><li>PREMIUM Hosting</li>
-          </ul>
-          <div class="project-img lazy">
-            <img data-src="https://rafi-not-found.my.id/hosting.png" alt="WeHostBD" loading="lazy">
-          </div>
-          <div class="project-links">
-            <a href="https://wehostbd.com" class="plink" aria-disabled="true"><i class="bi bi-globe"></i> WE HOST BD</a>
-            <button class="plink details-btn" data-project="rum"><i class="bi bi-eye"></i> Details</button>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-tags="frontend performance">
-          <div class="project-card__head">
-            <span class="project-icon"><i class="bi bi-cloud" aria-hidden="true"></i></span>
- 
-            <h3 class="project-title">Web Scraping API Service</h3>
-          </div>
-          <p class="project-desc">
-            RESTful API service for web scraping with rate limiting, proxy rotation, and data extraction from multiple sources.
-          </p>
-          <ul class="mini-tags">
-            <li>PHP</li><li>Python</li>
-          </ul>
-          <div class="project-img lazy">
-            <img data-src="https://placehold.co/800x400/111c23/9aaec2?text=Scraping+API" alt="CLI schema auditor preview" loading="lazy">
-          </div>
-          <div class="project-links">
-            <a href="#" class="plink disabled" aria-disabled="true"><i class="bi bi-github"></i> private</a>
-            <button class="plink details-btn" data-project="drift"><i class="bi bi-eye"></i> Details</button>
-          </div>
-        </article>
-
-        <article class="project-card project-card--placeholder reveal" data-tags="frontend">
-          <div class="placeholder-inner">
-            <i class="bi bi-layout-wtf" aria-hidden="true"></i>
-            <p>Next Case Study</p>
-            <span class="soon">In Progress</span>
-          </div>
-        </article>
-      </div>
-
-      <div class="projects__more">
-        <a href="https://github.com/rafixt" target="_blank" rel="noopener" class="btn btn--ghost">
-          <i class="bi bi-github" aria-hidden="true"></i> More on GitHub
-        </a>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section" aria-labelledby="contact-title">
-      <div class="section__header">
-        <h2 id="contact-title" class="section__title">Contact</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="contact__grid">
-        <div class="contact__info reveal">
-          <div class="info-block">
-            <h3 class="info-block__title"><i class="bi bi-person-gear" aria-hidden="true"></i> Info</h3>
-            <ul class="info-list">
-              <li><span>Telegram Username</span> <a href="https://t.me/rafi_not_found">@rafi_not_found</a></li>
-              <li><span>Location:</span> Remote (UTC)</li>
-              <li><span>Status:</span> Open to senior & architecture roles</li>
-            </ul>
-          </div>
-          <div class="social">
-            <a href="https://github.com/rafixt" class="soc" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
-            <a href="#" class="soc" aria-label="LinkedIn coming soon"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="soc" aria-label="Twitter coming soon"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="soc" aria-label="Blog coming soon"><i class="bi bi-journal-code"></i></a>
-          </div>
-        </div>
-        <form id="contact-form" class="contact__form reveal" novalidate>
-          <div class="form-field">
-            <label for="name">Name<span class="req" aria-hidden="true">*</span></label>
-            <input id="name" name="name" type="text" autocomplete="name" required maxlength="90">
-            <p class="err" aria-live="polite"></p>
-          </div>
-          <div class="form-field">
-            <label for="email">Email<span class="req" aria-hidden="true">*</span></label>
-            <input id="email" name="email" type="email" autocomplete="email" required maxlength="140">
-            <p class="err" aria-live="polite"></p>
-          </div>
-          <div class="form-field">
-            <label for="subject">Subject<span class="req" aria-hidden="true">*</span></label>
-            <input id="subject" name="subject" type="text" required maxlength="160" placeholder="E.g. Architecture Review">
-            <p class="err" aria-live="polite"></p>
-          </div>
-          <div class="form-field">
-            <label for="message">Message<span class="req" aria-hidden="true">*</span></label>
-            <textarea id="message" name="message" rows="6" required maxlength="1800" placeholder="Context, goals, constraints, timelines"></textarea>
-            <p class="err" aria-live="polite"></p>
-          </div>
-          <div class="form-field honeypot" aria-hidden="true">
-            <label for="hp">Leave empty</label>
-            <input id="hp" type="text" tabindex="-1" autocomplete="off">
-          </div>
-          <fieldset class="form-field">
-            <legend class="legend">Engagement Type (optional)</legend>
-            <div class="checks">
-              <label><input type="checkbox" name="engage" value="architecture"> Architecture</label>
-              <label><input type="checkbox" name="engage" value="performance"> Performance</label>
-              <label><input type="checkbox" name="engage" value="code-review"> Code Review</label>
-              <label><input type="checkbox" name="engage" value="mentorship"> Mentorship</label>
+                    <div class="code-bar">
+                        <span class="dot green"></span><span class="dot yellow"></span><span class="dot red"></span>
+                        <span class="fname">AX-PROFILE.JSON</span>
+                    </div>
+                </div>
             </div>
-          </fieldset>
-          <button type="submit" class="btn btn--primary btn--full">
-            <i class="bi bi-send" aria-hidden="true"></i> Send Message
-          </button>
-          <p id="form-status" class="form-status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
+        </section>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>&copy; <span id="year"></span> Abdullha. Built with performance & accessibility in mind.</p>
-      <p class="foot-small">Core Web Vitals · Progressive Enhancement · Typed APIs</p>
-    </div>
-  </footer>
+        <!-- ABOUT -->
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="section__header">
+                <h2 id="about-title" class="section__title">About</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about__grid">
+                <div class="about__text reveal">
+                    <p>
+                        I’m Abdullha, A Junior Web Engineer Focused On Robust Architectures, Maintainable Code, And
+                        Measurable User Value.
+                    </p>
+                    <p>
+                        Hey There! I'm Abdullha, A 18 Y/O Backend Developer From Morrelgonj.
+                        Currently, I'm Studying In College..
+                        Join Me In Exploring And Creating New Things In The Digital World.
+                    </p>
+                    <ul class="stats" aria-label="Key metrics">
+                        <li><span class="num">3+</span><span class="label">Years</span></li>
+                        <li><span class="num">150+</span><span class="label">Features Shipped</span></li>
+                        <li><span class="num">90%</span><span class="label">Lighthouse Avg</span></li>
+                        <li><span class="num">1</span><span class="label">P1 Rollbacks</span></li>
+                    </ul>
+                </div>
+                <div class="about__panel reveal">
+                    <figure class="profile-card">
+                        <img src="https://rafi-not-found.my.id/profile.png" alt="Abdullha" loading="lazy">
+                        <figcaption>
+                            <span class="title">ABDULLHA 404 </span>
+                            <span class="sub">Developer</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- STACK -->
+        <section id="stack" class="section" aria-labelledby="stack-title">
+            <div class="section__header">
+                <h2 id="stack-title" class="section__title">Tech Stack & Principles</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="stack__groups">
+                <div class="stack-group reveal">
+                    <h3>Programming Languages</h3>
+                    <ul class="tag-list">
+                        <li class="tag">PHP</li>
+                        <li class="tag">JavaScript (ESNext)</li>
+                        <li class="tag">Html</li>
+                        <li class="tag">Python (Scripting)</li>
+                    </ul>
+                    <ul class="bars">
+                        <li><span>PHP</span>
+                            <div class="bar"><b style="--w:50%"></b></div>
+                        </li>
+                        <li><span>JavaScript</span>
+                            <div class="bar"><b style="--w:70%"></b></div>
+                        </li>
+                        <li><span>Python</span>
+                            <div class="bar"><b style="--w:90%"></b></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="stack-group reveal">
+                    <h3>Web Development & APIs</h3>
+                    <ul class="tag-list">
+                        <li class="tag">Web Degain</li>
+                        <li class="tag">API Capture</li>
+                        <li class="tag">Telethon</li>
+                    </ul>
+                    <ul class="bars">
+                        <li><span>Web Source</span>
+                            <div class="bar"><b style="--w:89%"></b></div>
+                        </li>
+                        <li><span>API Capture</span>
+                            <div class="bar"><b style="--w:60%"></b></div>
+                        </li>
+                        <li><span>Telethon</span>
+                            <div class="bar"><b style="--w:20%"></b></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="section__header">
+                <h2 id="projects-title" class="section__title">Projects</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="projects__grid" id="projectGrid">
+                <article class="project-card reveal" data-tags="backend performance">
+                    <div class="project-card__head">
+                        <span class="project-icon"><i class="bi bi-tools" aria-hidden="true"></i></span>
+                        <h3 class="project-title">WEB TOOL</h3>
+                    </div>
+                    <p class="project-desc">
+                        Welcome to Abdullha's Official Tool Website тАУ Explore Powerful Tools & Resources in One
+                        Placel.
+                    </p>
+                    <ul class="mini-tags">
+                        <li>JavaScript</li>
+                        <li>Html</li>
+                        <li>CSS</li>
+                        <li>Nobe.js</li>
+                        <li>PHP</li>
+                    </ul>
+                    <div class="project-img lazy">
+                        <img data-src="https://placehold.co/800x400/111c23/9db4c2?text=Telegram+Bot+Manager"
+                            alt="API gateway architecture" loading="lazy">
+                    </div>
+                    <div class="project-links">
+                        <a href="http://abdullah.battlecore.xyz/" class="plink disabled" aria-disabled="true"><i class="bi bi-globe-americas"></i> Preview</a>
+                    </div>
+                </article>
+                <article class="project-card reveal" data-tags="frontend performance">
+                    <div class="project-card__head">
+                        <span class="project-icon"><i class="bi bi-file-person-fill" aria-hidden="true"></i></span>
+                        <h3 class="project-title">Hosting</h3>
+                    </div>
+                    <p class="project-desc">
+                        My Main Portfolio Wbdsite
+                    </p>
+                    <ul class="mini-tags">
+                        <li>Html</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                    <div class="project-img lazy">
+                        <img data-src="https://rafi-not-found.my.id/hosting.png" alt="WeHostBD" loading="lazy">
+                    </div>
+                    <div class="project-links">
+                        <a href="https://xylon.netlify.app/" class="plink" aria-disabled="true"><i class="bi bi-globe-americas"></i> Preview</a>
+                    </div>
+                </article>
+
+                <article class="project-card project-card--placeholder reveal" data-tags="frontend">
+                    <div class="placeholder-inner">
+                        <i class="bi bi-layout-wtf" aria-hidden="true"></i>
+                        <p>Next Case Study</p>
+                        <span class="soon">In Progress</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects__more">
+                <a href="https://github.com/xylon-404" target="_blank" rel="noopener" class="btn btn--ghost">
+                    <i class="bi bi-github" aria-hidden="true"></i> More on GitHub
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <div class="section__header">
+                <h2 id="contact-title" class="section__title">Contact</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact__grid">
+                <div class="contact__info reveal">
+                    <div class="info-block">
+                        <h3 class="info-block__title"><i class="bi bi-person-gear" aria-hidden="true"></i> Info</h3>
+                        <ul class="info-list">
+                            <li><span>Telegram Username</span> <a href="https://t.me/PRO_CODE_X">@PRO_CODE_X</a>
+                            </li>
+                            <li><span>Location:</span> Bangladesh</li>
+                            <li><span>Status:</span> Open to Junior & architecture roles</li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <a href="https://github.com/rafixt" class="soc" target="_blank" rel="noopener"><i
+                                class="bi bi-github"></i></a>
+                        <a href="#" class="soc" aria-label="LinkedIn coming soon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="soc" aria-label="Twitter coming soon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="soc" aria-label="Blog coming soon"><i class="bi bi-journal-code"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact__form reveal" novalidate>
+                    <div class="form-field">
+                        <label for="name">Name<span class="req" aria-hidden="true">*</span></label>
+                        <input id="name" name="name" type="text" autocomplete="name" required maxlength="90">
+                        <p class="err" aria-live="polite"></p>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email<span class="req" aria-hidden="true">*</span></label>
+                        <input id="email" name="email" type="email" autocomplete="email" required maxlength="140">
+                        <p class="err" aria-live="polite"></p>
+                    </div>
+                    <div class="form-field">
+                        <label for="subject">Subject<span class="req" aria-hidden="true">*</span></label>
+                        <input id="subject" name="subject" type="text" required maxlength="160"
+                            placeholder="E.g. Architecture Review">
+                        <p class="err" aria-live="polite"></p>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message<span class="req" aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" rows="6" required maxlength="1800"
+                            placeholder="Context, goals, constraints, timelines"></textarea>
+                        <p class="err" aria-live="polite"></p>
+                    </div>
+                    <div class="form-field honeypot" aria-hidden="true">
+                        <label for="hp">Leave empty</label>
+                        <input id="hp" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+                    <fieldset class="form-field">
+                        <legend class="legend">Engagement Type (optional)</legend>
+                        <div class="checks">
+                            <label><input type="checkbox" name="engage" value="architecture"> Architecture</label>
+                            <label><input type="checkbox" name="engage" value="performance"> Performance</label>
+                            <label><input type="checkbox" name="engage" value="code-review"> Code Review</label>
+                            <label><input type="checkbox" name="engage" value="mentorship"> Mentorship</label>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <i class="bi bi-send" aria-hidden="true"></i> Send Message
+                    </button>
+                    <p id="form-status" class="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span id="year"></span> Abdullha. Built with performance & accessibility in mind.</p>
+            <p class="foot-small">Core Web Vitals · Progressive Enhancement · Typed Code</p>
+        </div>
+    </footer>
 
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-  initYear();
-  initTheme();
-  initMobileNav();
-  initActiveNavHighlight();
-  initReveal();
-  initRoleRotator();
-  initFlowBackground();
-  initLazyImages();
-  initProjectFilters();
-  initProjectModal();
-  initCopySnippet();
-  initForm();
-  initPerfPanel();
-  respectReducedMotion();
-});
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initYear();
+            initTheme();
+            initMobileNav();
+            initActiveNavHighlight();
+            initReveal();
+            initRoleRotator();
+            initFlowBackground();
+            initLazyImages();
+            initProjectFilters();
+            initProjectModal();
+            initCopySnippet();
+            initForm();
+            initPerfPanel();
+            respectReducedMotion();
+        });
 
-/* Year */
-function initYear() {
-  const y = document.getElementById('year');
-  if (y) y.textContent = new Date().getFullYear();
-}
-
-/* Theme Toggle */
-function initTheme() {
-  const btn = document.getElementById('themeToggle');
-  if (!btn) return;
-  const stored = localStorage.getItem('theme');
-  if (stored) document.documentElement.setAttribute('data-theme', stored);
-  updateThemeIcon();
-
-  btn.addEventListener('click', () => {
-    const current = document.documentElement.getAttribute('data-theme') || 'dark';
-    const next = current === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-    document.getElementById('theme-color')?.setAttribute('content', next === 'dark' ? '#05080b' : '#f5f8f9');
-    updateThemeIcon();
-  });
-
-  function updateThemeIcon() {
-    const icon = btn.querySelector('.theme-icon');
-    const theme = document.documentElement.getAttribute('data-theme') || 'dark';
-    if (icon) icon.className = 'bi theme-icon ' + (theme === 'dark' ? 'bi-sun-fill' : 'bi-moon-fill');
-  }
-}
-
-/* Mobile Navigation */
-function initMobileNav() {
-  const toggle = document.querySelector('.nav-toggle');
-  const panel = document.getElementById('mobileNav');
-  if (!toggle || !panel) return;
-
-  function close() {
-    panel.hidden = true;
-    toggle.setAttribute('aria-expanded', 'false');
-    document.documentElement.style.overflow = '';
-  }
-
-  toggle.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    expanded ? close() : (panel.hidden = false, toggle.setAttribute('aria-expanded', 'true'), document.documentElement.style.overflow = 'hidden');
-  });
-
-  panel.addEventListener('click', e => {
-    if (e.target.matches('[data-nav]')) close();
-  });
-  window.addEventListener('resize', () => { if (window.innerWidth >= 980) close(); }, { passive: true });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
-}
-
-/* Active Nav Highlight */
-function initActiveNavHighlight() {
-  const sections = [...document.querySelectorAll('main section[id]')];
-  const links = [...document.querySelectorAll('[data-nav]')];
-  function update() {
-    const pos = window.scrollY + window.innerHeight * 0.33;
-    let current = sections[0]?.id;
-    for (const s of sections) if (pos >= s.offsetTop - 10) current = s.id;
-    links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === `#${current}`));
-  }
-  window.addEventListener('scroll', update, { passive: true });
-  update();
-}
-
-/* Reveal */
-function initReveal() {
-  const items = document.querySelectorAll('.reveal');
-  if (!('IntersectionObserver' in window)) { items.forEach(i => i.classList.add('is-visible')); return; }
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('is-visible');
-        obs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.15, rootMargin: '0px 0px -60px' });
-  items.forEach(i => obs.observe(i));
-}
-
-/* Role Rotator */
-function initRoleRotator() {
-  const el = document.querySelector('.role-rotator');
-  if (!el) return;
-  let roles;
-  try { roles = JSON.parse(el.getAttribute('data-roles')); } catch { roles = ['Web Engineer','Developer']; }
-  let idx = 0, char = 0, deleting = false;
-  const typeSpeed = 55, deleteSpeed = 35, hold = 1400;
-  function tick() {
-    const role = roles[idx];
-    if (!deleting) {
-      char++; el.textContent = role.slice(0, char);
-      if (char === role.length) { deleting = true; setTimeout(tick, hold); return; }
-    } else {
-      char--; el.textContent = role.slice(0, char);
-      if (!char) { deleting = false; idx = (idx + 1) % roles.length; }
-    }
-    setTimeout(tick, (deleting ? deleteSpeed : typeSpeed) + (Math.random() * 40 - 20));
-  }
-  tick();
-}
-
-/* Flow Field / Ribbon Background */
-function initFlowBackground() {
-  const canvas = document.getElementById('bg-flow');
-  if (!canvas || prefersReducedMotion()) return;
-  const ctx = canvas.getContext('2d');
-  let w, h, particles, noiseZ = 0;
-  const DENSITY = 68;
-
-  function resize() {
-    w = canvas.width = window.innerWidth;
-    h = canvas.height = window.innerHeight;
-    const count = Math.min(DENSITY, Math.floor((w * h) / 18000));
-    particles = Array.from({ length: count }, () => spawn());
-  }
-
-  function spawn() {
-    return {
-      x: Math.random() * w,
-      y: Math.random() * h,
-      vx: 0,
-      vy: 0,
-      life: 0,
-      max: 600 + Math.random() * 400,
-      hue: 170 + Math.random() * 100,
-      size: 0.6 + Math.random() * 1.1
-    };
-  }
-
-  function noise(x, y, z) {
-    return (Math.sin(x * 0.0027 + z * 0.002) +
-            Math.sin(y * 0.0029 + z * 0.0017) +
-            Math.sin((x + y) * 0.0013 + z * 0.0031)) / 3;
-  }
-
-  function step() {
-    ctx.fillStyle = 'rgba(5,8,11,0.12)';
-    ctx.fillRect(0,0,w,h);
-
-    particles.forEach(p => {
-      const n = noise(p.x, p.y, noiseZ);
-      const a = n * Math.PI * 2;
-      const speed = 0.6 + (n + 1) * 0.7;
-      p.vx = Math.cos(a) * speed;
-      p.vy = Math.sin(a) * speed;
-      p.x += p.vx;
-      p.y += p.vy;
-      p.life++;
-
-      if (p.x < -50 || p.x > w + 50 || p.y < -50 || p.y > h + 50 || p.life > p.max) Object.assign(p, spawn());
-
-      ctx.beginPath();
-      const gradient = ctx.createLinearGradient(p.x, p.y, p.x - p.vx * 4, p.y - p.vy * 4);
-      const alpha = 0.12 + (n + 1) * 0.08;
-      gradient.addColorStop(0, `hsla(${p.hue},80%,60%,${alpha})`);
-      gradient.addColorStop(1, `hsla(${(p.hue+40)%360},80%,55%,0)`);
-      ctx.strokeStyle = gradient;
-      ctx.lineWidth = p.size;
-      ctx.moveTo(p.x, p.y);
-      ctx.lineTo(p.x - p.vx * 4, p.y - p.vy * 4);
-      ctx.stroke();
-    });
-
-    noiseZ += 1.3;
-    requestAnimationFrame(step);
-  }
-
-  resize();
-  window.addEventListener('resize', debounce(resize, 250), { passive: true });
-  step();
-}
-
-/* Lazy Images */
-function initLazyImages() {
-  const images = document.querySelectorAll('.project-img img[data-src]');
-  if (!('IntersectionObserver' in window)) {
-    images.forEach(i => { i.src = i.dataset.src; i.parentElement.classList.add('loaded'); });
-    return;
-  }
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        const img = e.target;
-        img.src = img.dataset.src;
-        img.addEventListener('load', () => img.parentElement.classList.add('loaded'), { once: true });
-        obs.unobserve(img);
-      }
-    });
-  }, { rootMargin: '120px 0px' });
-  images.forEach(i => obs.observe(i));
-}
-
-/* Project Filters */
-function initProjectFilters() {
-  const buttons = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.project-card');
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.getAttribute('data-filter');
-      cards.forEach(card => {
-        if (filter === 'all') card.hidden = false;
-        else {
-          const tags = card.getAttribute('data-tags')?.split(/\s+/) || [];
-          card.hidden = !tags.includes(filter);
+        /* Year */
+        function initYear() {
+            const y = document.getElementById('year');
+            if (y) y.textContent = new Date().getFullYear();
         }
-      });
-    });
-  });
-}
 
-/* Project Modal */
-function initProjectModal() {
-  const modal = document.getElementById('projectModal');
-  const content = document.getElementById('modalContent');
-  const closeBtn = modal?.querySelector('.modal__close');
-  if (!modal || !content || !closeBtn) return;
+        /* Theme Toggle */
+        function initTheme() {
+            const btn = document.getElementById('themeToggle');
+            if (!btn) return;
+            const stored = localStorage.getItem('theme');
+            if (stored) document.documentElement.setAttribute('data-theme', stored);
+            updateThemeIcon();
 
-  const data = {
-    gateway: {
-      title: 'API Composition Gateway',
-      meta: ['TypeScript', 'GraphQL', 'Edge Caching'],
-      body: `An edge gateway consolidating REST, GraphQL, and gRPC sources into a unified schema. Implements request coalescing, circuit breakers, timeouts, and schema validation with zod. Provides usage telemetry and adaptive caching strategies at the edge.`,
-      snippet: `type Upstream = { name:string; url:string; timeout:number };
+            btn.addEventListener('click', () => {
+                const current = document.documentElement.getAttribute('data-theme') || 'dark';
+                const next = current === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+                document.getElementById('theme-color')?.setAttribute('content', next === 'dark' ? '#05080b' : '#f5f8f9');
+                updateThemeIcon();
+            });
+
+            function updateThemeIcon() {
+                const icon = btn.querySelector('.theme-icon');
+                const theme = document.documentElement.getAttribute('data-theme') || 'dark';
+                if (icon) icon.className = 'bi theme-icon ' + (theme === 'dark' ? 'bi-sun-fill' : 'bi-moon-fill');
+            }
+        }
+
+        /* Mobile Navigation */
+        function initMobileNav() {
+            const toggle = document.querySelector('.nav-toggle');
+            const panel = document.getElementById('mobileNav');
+            if (!toggle || !panel) return;
+
+            function close() {
+                panel.hidden = true;
+                toggle.setAttribute('aria-expanded', 'false');
+                document.documentElement.style.overflow = '';
+            }
+
+            toggle.addEventListener('click', () => {
+                const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                expanded ? close() : (panel.hidden = false, toggle.setAttribute('aria-expanded', 'true'), document.documentElement.style.overflow = 'hidden');
+            });
+
+            panel.addEventListener('click', e => {
+                if (e.target.matches('[data-nav]')) close();
+            });
+            window.addEventListener('resize', () => { if (window.innerWidth >= 980) close(); }, { passive: true });
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+        }
+
+        /* Active Nav Highlight */
+        function initActiveNavHighlight() {
+            const sections = [...document.querySelectorAll('main section[id]')];
+            const links = [...document.querySelectorAll('[data-nav]')];
+            function update() {
+                const pos = window.scrollY + window.innerHeight * 0.33;
+                let current = sections[0]?.id;
+                for (const s of sections) if (pos >= s.offsetTop - 10) current = s.id;
+                links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === `#${current}`));
+            }
+            window.addEventListener('scroll', update, { passive: true });
+            update();
+        }
+
+        /* Reveal */
+        function initReveal() {
+            const items = document.querySelectorAll('.reveal');
+            if (!('IntersectionObserver' in window)) { items.forEach(i => i.classList.add('is-visible')); return; }
+            const obs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('is-visible');
+                        obs.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -60px' });
+            items.forEach(i => obs.observe(i));
+        }
+
+        /* Role Rotator */
+        function initRoleRotator() {
+            const el = document.querySelector('.role-rotator');
+            if (!el) return;
+            let roles;
+            try { roles = JSON.parse(el.getAttribute('data-roles')); } catch { roles = ['Web Engineer', 'Developer']; }
+            let idx = 0, char = 0, deleting = false;
+            const typeSpeed = 55, deleteSpeed = 35, hold = 1400;
+            function tick() {
+                const role = roles[idx];
+                if (!deleting) {
+                    char++; el.textContent = role.slice(0, char);
+                    if (char === role.length) { deleting = true; setTimeout(tick, hold); return; }
+                } else {
+                    char--; el.textContent = role.slice(0, char);
+                    if (!char) { deleting = false; idx = (idx + 1) % roles.length; }
+                }
+                setTimeout(tick, (deleting ? deleteSpeed : typeSpeed) + (Math.random() * 40 - 20));
+            }
+            tick();
+        }
+
+        /* Flow Field / Ribbon Background */
+        function initFlowBackground() {
+            const canvas = document.getElementById('bg-flow');
+            if (!canvas || prefersReducedMotion()) return;
+            const ctx = canvas.getContext('2d');
+            let w, h, particles, noiseZ = 0;
+            const DENSITY = 68;
+
+            function resize() {
+                w = canvas.width = window.innerWidth;
+                h = canvas.height = window.innerHeight;
+                const count = Math.min(DENSITY, Math.floor((w * h) / 18000));
+                particles = Array.from({ length: count }, () => spawn());
+            }
+
+            function spawn() {
+                return {
+                    x: Math.random() * w,
+                    y: Math.random() * h,
+                    vx: 0,
+                    vy: 0,
+                    life: 0,
+                    max: 600 + Math.random() * 400,
+                    hue: 170 + Math.random() * 100,
+                    size: 0.6 + Math.random() * 1.1
+                };
+            }
+
+            function noise(x, y, z) {
+                return (Math.sin(x * 0.0027 + z * 0.002) +
+                    Math.sin(y * 0.0029 + z * 0.0017) +
+                    Math.sin((x + y) * 0.0013 + z * 0.0031)) / 3;
+            }
+
+            function step() {
+                ctx.fillStyle = 'rgba(5,8,11,0.12)';
+                ctx.fillRect(0, 0, w, h);
+
+                particles.forEach(p => {
+                    const n = noise(p.x, p.y, noiseZ);
+                    const a = n * Math.PI * 2;
+                    const speed = 0.6 + (n + 1) * 0.7;
+                    p.vx = Math.cos(a) * speed;
+                    p.vy = Math.sin(a) * speed;
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.life++;
+
+                    if (p.x < -50 || p.x > w + 50 || p.y < -50 || p.y > h + 50 || p.life > p.max) Object.assign(p, spawn());
+
+                    ctx.beginPath();
+                    const gradient = ctx.createLinearGradient(p.x, p.y, p.x - p.vx * 4, p.y - p.vy * 4);
+                    const alpha = 0.12 + (n + 1) * 0.08;
+                    gradient.addColorStop(0, `hsla(${p.hue},80%,60%,${alpha})`);
+                    gradient.addColorStop(1, `hsla(${(p.hue + 40) % 360},80%,55%,0)`);
+                    ctx.strokeStyle = gradient;
+                    ctx.lineWidth = p.size;
+                    ctx.moveTo(p.x, p.y);
+                    ctx.lineTo(p.x - p.vx * 4, p.y - p.vy * 4);
+                    ctx.stroke();
+                });
+
+                noiseZ += 1.3;
+                requestAnimationFrame(step);
+            }
+
+            resize();
+            window.addEventListener('resize', debounce(resize, 250), { passive: true });
+            step();
+        }
+
+        /* Lazy Images */
+        function initLazyImages() {
+            const images = document.querySelectorAll('.project-img img[data-src]');
+            if (!('IntersectionObserver' in window)) {
+                images.forEach(i => { i.src = i.dataset.src; i.parentElement.classList.add('loaded'); });
+                return;
+            }
+            const obs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        const img = e.target;
+                        img.src = img.dataset.src;
+                        img.addEventListener('load', () => img.parentElement.classList.add('loaded'), { once: true });
+                        obs.unobserve(img);
+                    }
+                });
+            }, { rootMargin: '120px 0px' });
+            images.forEach(i => obs.observe(i));
+        }
+
+        /* Project Filters */
+        function initProjectFilters() {
+            const buttons = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.project-card');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const filter = btn.getAttribute('data-filter');
+                    cards.forEach(card => {
+                        if (filter === 'all') card.hidden = false;
+                        else {
+                            const tags = card.getAttribute('data-tags')?.split(/\s+/) || [];
+                            card.hidden = !tags.includes(filter);
+                        }
+                    });
+                });
+            });
+        }
+
+        /* Project Modal */
+        function initProjectModal() {
+            const modal = document.getElementById('projectModal');
+            const content = document.getElementById('modalContent');
+            const closeBtn = modal?.querySelector('.modal__close');
+            if (!modal || !content || !closeBtn) return;
+
+            const data = {
+                gateway: {
+                    title: 'API Composition Gateway',
+                    meta: ['TypeScript', 'GraphQL', 'Edge Caching'],
+                    body: `An edge gateway consolidating REST, GraphQL, and gRPC sources into a unified schema. Implements request coalescing, circuit breakers, timeouts, and schema validation with zod. Provides usage telemetry and adaptive caching strategies at the edge.`,
+                    snippet: `type Upstream = { name:string; url:string; timeout:number };
 async function compose(list: Upstream[]) {
   return Promise.all(list.map(async u => {
     const c = new AbortController();
@@ -612,22 +620,22 @@ async function compose(list: Upstream[]) {
     } finally { clearTimeout(t); }
   }));
 }`
-    },
-    rum: {
-      title: 'RUM Performance Dashboard',
-      meta: ['React', 'Web Vitals', 'Streaming'],
-      body: `Monitors Core Web Vitals and custom hydration metrics, analyzing regression deltas and flagging performance budget breaches. Uses streaming ingestion + worker offloading for minimal runtime overhead.`,
-      snippet: `import { onCLS,onLCP,onINP } from 'web-vitals';
+                },
+                rum: {
+                    title: 'RUM Performance Dashboard',
+                    meta: ['React', 'Web Vitals', 'Streaming'],
+                    body: `Monitors Core Web Vitals and custom hydration metrics, analyzing regression deltas and flagging performance budget breaches. Uses streaming ingestion + worker offloading for minimal runtime overhead.`,
+                    snippet: `import { onCLS,onLCP,onINP } from 'web-vitals';
 function report(name,value){
   navigator.sendBeacon('/rum', JSON.stringify({ name,value, ts: performance.now() }));
 }
 [onCLS,onLCP,onINP].forEach(fn => fn(m => report(m.name, m.value)));`
-    },
-    drift: {
-      title: 'Schema Drift Auditor',
-      meta: ['Go', 'PostgreSQL', 'CI'],
-      body: `Detects schema drift by comparing declarative schema to production introspection. Generates actionable migration diffs & fail thresholds gating merges; integrates with PR comments.`,
-      snippet: `func diff(expected, actual map[string]Column) []Issue {
+                },
+                drift: {
+                    title: 'Schema Drift Auditor',
+                    meta: ['Go', 'PostgreSQL', 'CI'],
+                    body: `Detects schema drift by comparing declarative schema to production introspection. Generates actionable migration diffs & fail thresholds gating merges; integrates with PR comments.`,
+                    snippet: `func diff(expected, actual map[string]Column) []Issue {
   issues := []Issue{}
   for name, exp := range expected {
     act, ok := actual[name]
@@ -641,103 +649,103 @@ function report(name,value){
   }
   return issues
 }`
-    }
-  };
+                }
+            };
 
-  document.addEventListener('click', e => {
-    const btn = e.target.closest('.details-btn');
-    if (!btn) return;
-    const key = btn.getAttribute('data-project');
-    if (!key || !data[key]) return;
-    openModal(data[key]);
-  });
+            document.addEventListener('click', e => {
+                const btn = e.target.closest('.details-btn');
+                if (!btn) return;
+                const key = btn.getAttribute('data-project');
+                if (!key || !data[key]) return;
+                openModal(data[key]);
+            });
 
-  closeBtn.addEventListener('click', closeModal);
-  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) closeModal(); });
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+            document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) closeModal(); });
 
-  function openModal(entry) {
-    content.innerHTML = `
+            function openModal(entry) {
+                content.innerHTML = `
       <h3 id="modalTitle">${entry.title}</h3>
-      <p class="meta">${entry.meta.map(m=>`<span>${m}</span>`).join('')}</p>
+      <p class="meta">${entry.meta.map(m => `<span>${m}</span>`).join('')}</p>
       <p>${entry.body}</p>
       <pre><code>${escapeHTML(entry.snippet)}</code></pre>
     `;
-    modal.hidden = false;
-    document.documentElement.style.overflow = 'hidden';
-    closeBtn.focus();
-  }
+                modal.hidden = false;
+                document.documentElement.style.overflow = 'hidden';
+                closeBtn.focus();
+            }
 
-  function closeModal() {
-    modal.hidden = true;
-    document.documentElement.style.overflow = '';
-  }
-}
+            function closeModal() {
+                modal.hidden = true;
+                document.documentElement.style.overflow = '';
+            }
+        }
 
-/* Copy Snippet */
-function initCopySnippet() {
-  document.getElementById('copySnippet')?.addEventListener('click', e => {
-    const sel = e.currentTarget.getAttribute('data-copy-target');
-    const codeEl = document.querySelector(sel);
-    copyCode(codeEl);
-  });
-}
+        /* Copy Snippet */
+        function initCopySnippet() {
+            document.getElementById('copySnippet')?.addEventListener('click', e => {
+                const sel = e.currentTarget.getAttribute('data-copy-target');
+                const codeEl = document.querySelector(sel);
+                copyCode(codeEl);
+            });
+        }
 
-function copyCode(el) {
-  if (!el) return;
-  const text = el.textContent;
-  navigator.clipboard.writeText(text).then(() => announce('Code copied to clipboard'))
-    .catch(() => announce('Copy failed'));
-}
+        function copyCode(el) {
+            if (!el) return;
+            const text = el.textContent;
+            navigator.clipboard.writeText(text).then(() => announce('Code copied to clipboard'))
+                .catch(() => announce('Copy failed'));
+        }
 
-/* Form */
-function initForm() {
-  const form = document.getElementById('contact-form');
-  if (!form) return;
-  const status = document.getElementById('form-status'); // Make sure you have an element with id="form-status"
+        /* Form */
+        function initForm() {
+            const form = document.getElementById('contact-form');
+            if (!form) return;
+            const status = document.getElementById('form-status'); // Make sure you have an element with id="form-status"
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    status.textContent = '';
-    
-    // Honeypot check
-    const hp = form.querySelector('#hp');
-    if (hp && hp.value) { 
-      status.textContent = 'Spam detected.'; 
-      return; 
-    }
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                status.textContent = '';
 
-    // Validate required fields
-    const required = ['name','email','subject','message'];
-    let valid = true;
-    required.forEach(name => {
-      const field = form.querySelector(`[name="${name}"]`);
-      const err = field?.closest('.form-field')?.querySelector('.err');
-      if (!field || !err) return;
-      err.textContent = '';
-      if (!field.value.trim()) { 
-        err.textContent = 'Required.'; 
-        valid = false; 
-      }
-      else if (name === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) { 
-        err.textContent = 'Invalid email.'; 
-        valid = false; 
-      }
-    });
-    if (!valid) return;
+                // Honeypot check
+                const hp = form.querySelector('#hp');
+                if (hp && hp.value) {
+                    status.textContent = 'Spam detected.';
+                    return;
+                }
 
-    // Sending status
-    status.textContent = 'Sending...';
+                // Validate required fields
+                const required = ['name', 'email', 'subject', 'message'];
+                let valid = true;
+                required.forEach(name => {
+                    const field = form.querySelector(`[name="${name}"]`);
+                    const err = field?.closest('.form-field')?.querySelector('.err');
+                    if (!field || !err) return;
+                    err.textContent = '';
+                    if (!field.value.trim()) {
+                        err.textContent = 'Required.';
+                        valid = false;
+                    }
+                    else if (name === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) {
+                        err.textContent = 'Invalid email.';
+                        valid = false;
+                    }
+                });
+                if (!valid) return;
 
-    // Collect form data
-    const name = form.querySelector('#name').value.trim();
-    const email = form.querySelector('#email').value.trim();
-    const subject = form.querySelector('#subject').value.trim();
-    const messageText = form.querySelector('#message').value.trim();
-    const engages = Array.from(form.querySelectorAll("input[name='engage']:checked")).map(el => el.value).join(", ") || "None";
+                // Sending status
+                status.textContent = 'Sending...';
 
-    // Stylish Telegram message
-    const telegramMessage = `
+                // Collect form data
+                const name = form.querySelector('#name').value.trim();
+                const email = form.querySelector('#email').value.trim();
+                const subject = form.querySelector('#subject').value.trim();
+                const messageText = form.querySelector('#message').value.trim();
+                const engages = Array.from(form.querySelectorAll("input[name='engage']:checked")).map(el => el.value).join(", ") || "None";
+
+                // Stylish Telegram message
+                const telegramMessage = `
 *📨 New Contact Form Submission*
 
 *👤 Name:* \`${name}\`
@@ -747,64 +755,64 @@ function initForm() {
 *📌 Engagement:* \`${engages}\`
     `;
 
-    // Telegram Bot info
-    const botToken = "7409308653:AAHYxmwLpp7PRK80jmqa0o5HtvYWDs3BG24";
-    const chatId = "7916265319";
-    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+                // Telegram Bot info
+                const botToken = "7409308653:AAHYxmwLpp7PRK80jmqa0o5HtvYWDs3BG24";
+                const chatId = "7916265319";
+                const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
-    // Send message via Telegram
-    fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text: telegramMessage,
-        parse_mode: "MarkdownV2"
-      })
-    })
-    .then(res => res.json())
-    .then(data => {
-      if(data.ok){
-        status.textContent = 'Message sent successfully!'; // updated status
-        form.reset();
-      } else {
-        status.textContent = 'Failed to send message. Try again later.';
-        console.error(data);
-      }
-    })
-    .catch(err => {
-      status.textContent = 'Error sending message.';
-      console.error(err);
-    });
-  });
-}
+                // Send message via Telegram
+                fetch(url, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        chat_id: chatId,
+                        text: telegramMessage,
+                        parse_mode: "MarkdownV2"
+                    })
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.ok) {
+                            status.textContent = 'Message sent successfully!'; // updated status
+                            form.reset();
+                        } else {
+                            status.textContent = 'Failed to send message. Try again later.';
+                            console.error(data);
+                        }
+                    })
+                    .catch(err => {
+                        status.textContent = 'Error sending message.';
+                        console.error(err);
+                    });
+            });
+        }
 
-// Initialize form
-document.addEventListener('DOMContentLoaded', initForm);
+        // Initialize form
+        document.addEventListener('DOMContentLoaded', initForm);
 
-/* Performance Panel */
-let perfVisible = false;
-function initPerfPanel() {
-  window.__perf = () => togglePerfPanel();
-  setTimeout(collectPerf, 0);
-}
-function togglePerfPanel(force) {
-  const panel = document.getElementById('perf-panel');
-  perfVisible = typeof force === 'boolean' ? force : !perfVisible;
-  if (!panel) return;
-  panel.hidden = !perfVisible;
-  if (perfVisible) collectPerf();
-}
-function collectPerf() {
-  const panel = document.getElementById('perf-panel');
-  if (!panel || panel.hidden) return;
-  const nav = performance.getEntriesByType('navigation')[0];
-  const paint = performance.getEntriesByType('paint');
-  const fcp = paint.find(p => p.name === 'first-contentful-paint')?.startTime || 0;
-  const dns = nav ? nav.domainLookupEnd - nav.domainLookupStart : 0;
-  const ttfb = nav ? nav.responseStart - nav.requestStart : 0;
-  const dom = nav ? nav.domContentLoadedEventEnd - nav.startTime : 0;
-  panel.innerHTML = `
+        /* Performance Panel */
+        let perfVisible = false;
+        function initPerfPanel() {
+            window.__perf = () => togglePerfPanel();
+            setTimeout(collectPerf, 0);
+        }
+        function togglePerfPanel(force) {
+            const panel = document.getElementById('perf-panel');
+            perfVisible = typeof force === 'boolean' ? force : !perfVisible;
+            if (!panel) return;
+            panel.hidden = !perfVisible;
+            if (perfVisible) collectPerf();
+        }
+        function collectPerf() {
+            const panel = document.getElementById('perf-panel');
+            if (!panel || panel.hidden) return;
+            const nav = performance.getEntriesByType('navigation')[0];
+            const paint = performance.getEntriesByType('paint');
+            const fcp = paint.find(p => p.name === 'first-contentful-paint')?.startTime || 0;
+            const dns = nav ? nav.domainLookupEnd - nav.domainLookupStart : 0;
+            const ttfb = nav ? nav.responseStart - nav.requestStart : 0;
+            const dom = nav ? nav.domContentLoadedEventEnd - nav.startTime : 0;
+            panel.innerHTML = `
     <strong>Performance</strong>
     <div>DNS: ${dns.toFixed(1)}ms</div>
     <div>TTFB: ${ttfb.toFixed(1)}ms</div>
@@ -812,26 +820,27 @@ function collectPerf() {
     <div>DOM Ready: ${dom.toFixed(1)}ms</div>
     <div>Resources: ${performance.getEntriesByType('resource').length}</div>
   `;
-  requestAnimationFrame(() => { if (!panel.hidden) collectPerf(); });
-}
+            requestAnimationFrame(() => { if (!panel.hidden) collectPerf(); });
+        }
 
-/* Helpers */
-function prefersReducedMotion() {
-  return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-}
-function respectReducedMotion() {
-  if (prefersReducedMotion()) document.documentElement.classList.add('reduced-motion');
-}
-function debounce(fn, wait = 200) {
-  let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn.apply(null,a), wait); };
-}
-function escapeHTML(str) {
-  return str.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
-function announce(msg) {
-  const region = document.getElementById('live-region');
-  if (region) { region.textContent = ''; setTimeout(()=> region.textContent = msg, 30); }
-}
-  </script>
+        /* Helpers */
+        function prefersReducedMotion() {
+            return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        }
+        function respectReducedMotion() {
+            if (prefersReducedMotion()) document.documentElement.classList.add('reduced-motion');
+        }
+        function debounce(fn, wait = 200) {
+            let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn.apply(null, a), wait); };
+        }
+        function escapeHTML(str) {
+            return str.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        }
+        function announce(msg) {
+            const region = document.getElementById('live-region');
+            if (region) { region.textContent = ''; setTimeout(() => region.textContent = msg, 30); }
+        }
+    </script>
 </body>
+
 </html>
